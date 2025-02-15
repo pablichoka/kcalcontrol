@@ -1,11 +1,13 @@
-import React from 'react';
+import React from "react";
+import styles from "../styles/Header.module.css";
 
 const Header: React.FC = () => {
-    return (
-        <header>
-            <h1>Mi Aplicación Next.js</h1>
-        </header>
-    );
+  return (
+    <header className={styles.toolbar}>      
+        <img src="logo.png" alt="kCalControl Logo"/>
+        <h1>kCalControl</h1>
+    </header>
+  );
 };
 
 export default Header;

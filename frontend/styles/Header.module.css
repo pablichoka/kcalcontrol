@@ -1,0 +1,27 @@
+.toolbar {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  background-color: #31DA9E;
+  background: linear-gradient(45deg, #31DA9E, #ececec);
+  animation: gradientAnimation 3s infinite both;
+
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  height: 15vh;
+}
+
+.toolbar img{
+  margin: 1rem;
+  border-radius: 15px;
+  text-align: left;
+  height: 80px;
+  width: 80px;
+}
