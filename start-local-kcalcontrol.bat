@@ -1,0 +1,2 @@
+wt -p "PowerShell" -d . --title "Backend" powershell.exe -NoExit -Command "npm run start:backend" `; split-pane -V -p "PowerShell" -d . --title "Frontend" powershell.exe -NoExit -Command "npm run start:frontend"
+REM Path: start-local-kcalcontrol.bat

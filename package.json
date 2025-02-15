@@ -1,0 +1,13 @@
+{
+  "name": "kcalcontrol-app",
+  "version": "1.0.0",
+  "scripts": {
+    "start:backend": "cd backend && ./mvnw spring-boot:run",
+    "start:frontend": "cd frontend && npm run dev",
+    "start": "start-local-kcalcontrol.bat",
+    "install:frontend": "cd frontend && npm install",
+    "build:frontend": "cd frontend && npm run build",
+    "test:backend": "cd backend && ./mvnw test",
+    "test:frontend": "cd frontend && npm test"
+  }
+}
