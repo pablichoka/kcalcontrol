@@ -1,0 +1,25 @@
+# Local configuration files
+.vscode/
+.idea/
+*.local
+*.env
+*.log
+
+# Dependency directories
+node_modules/
+
+# Build directories
+dist/
+build/
+.next/
+
+# System files
+.DS_Store
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# TypeScript build files
+*.tsbuildinfo

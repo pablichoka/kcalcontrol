@@ -1,0 +1,24 @@
+name: CI Workflow
+
+on: 
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  typos:
+    name: runner / typos
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: Shemnei/reviewdog-action-typos@v0.16
+        with:
+          reporter: github-check
+          level: error
+          fail_on_error: false
+          files: |
+            ./backend/src/main/java/com/kCalControl
+            ./frontend/src
+          locale: en-gb
