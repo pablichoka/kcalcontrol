@@ -1,32 +1,20 @@
 # My Next.js App
 
-Este es un proyecto de aplicación React utilizando Next.js.
+This is a React application project using Next.js.
 
-## Estructura del Proyecto
+## Dependencies
 
-```
-my-nextjs-app
-├── pages
-│   ├── index.tsx         # Página principal de la aplicación
-│   └── _app.tsx          # Personaliza el componente de la aplicación
-├── public
-│   └── favicon.ico       # Ícono de la aplicación
-├── styles
-│   ├── globals.css       # Estilos globales
-│   └── Home.module.css   # Estilos específicos para la página de inicio
-├── components
-│   └── Header.tsx        # Componente de cabecera
-├── package.json          # Configuración de npm
-├── tsconfig.json         # Configuración de TypeScript
-└── README.md             # Documentación del proyecto
-```
+- `react` and `react-dom` for building user interfaces
+- `next` for server-side rendering and static site generation
+- `typescript` for static type checking
+- `eslint` and `prettier` for code linting and formatting
 
-## Instalación
+## Installation
 
-1. Clona el repositorio.
-2. Navega a la carpeta del proyecto.
-3. Ejecuta `npm install` para instalar las dependencias.
+1. Clone the repository.
+2. Navigate to the project folder.
+3. Run `npm install` to install the dependencies.
 
-## Uso
+## Usage
 
-Para iniciar la aplicación, ejecuta `npm run dev` y abre tu navegador en `http://localhost:3000`.
+To start the application, run `npm run dev` and open your browser at `http://localhost:3000`.
