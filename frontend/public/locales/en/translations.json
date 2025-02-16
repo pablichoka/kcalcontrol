@@ -1,3 +1,9 @@
 {
-  "title": "kCalControl"
+  "title": "kCalControl",
+  "languageSelector" : {
+    "options": {
+      "en": "English",
+      "es": "Spanish"
+    }
+  }
 }
