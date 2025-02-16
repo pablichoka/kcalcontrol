@@ -56,3 +56,11 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
+.languageSelector {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 10px;
+  z-index: 1000;
+}
