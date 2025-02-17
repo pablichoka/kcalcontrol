@@ -1,0 +1,10 @@
+{
+  "frontpage": {
+    "message": "¡Hola Mundo!",
+    "description": "The main title of the application",
+    "language": {
+      "es-ES": "Español",
+      "en-US": "Inglés"
+    }
+  }
+}
