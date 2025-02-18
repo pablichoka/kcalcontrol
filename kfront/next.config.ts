@@ -2,6 +2,11 @@ import type { NextConfig } from "next";
 import path from "path";
 
 const nextConfig: NextConfig = {
+  i18n: {
+    localeDetection: false,
+    defaultLocale: "es",
+    locales: ['es', 'en'],
+  },
   experimental: {
     turbo: {
       resolveAlias: {
