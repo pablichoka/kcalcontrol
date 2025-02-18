@@ -1,0 +1,10 @@
+{
+  "frontpage": {
+    "message": "¡Hola Mundo!",
+    "description": "El titulo principal de la página",
+    "language": {
+      "es": "Español",
+      "en": "Inglés"
+    }
+  }
+}

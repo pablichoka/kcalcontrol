@@ -3,8 +3,8 @@
     "message": "Hello World!",
     "description": "The main title of the application",
     "language": {
-      "es-ES": "Spanish",
-      "en-US": "English"
+      "es": "Spanish",
+      "en": "English"
     }
   }
 }
