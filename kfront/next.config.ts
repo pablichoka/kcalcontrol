@@ -10,19 +10,21 @@ const nextConfig: NextConfig = {
   experimental: {
     turbo: {
       resolveAlias: {
-        components: path.resolve(__dirname, "components"),
-        utils: path.resolve(__dirname, "utils"),
-        styles: path.resolve(__dirname, "styles"),
-        routes: path.resolve(__dirname, "routes"),
+        components: path.resolve(__dirname, "app/components"),
+        utils: path.resolve(__dirname, "app/utils"),
+        styles: path.resolve(__dirname, "app/styles"),
+        routes: path.resolve(__dirname, "app/routes"),
+        i18n: path.resolve(__dirname, "i18n"),
       }
     }},
   webpack: (config) => {
     config.resolve.alias = {
       ...config.resolve.alias,
-      components: path.resolve(__dirname, "components"),
-      utils: path.resolve(__dirname, "utils"),
-      styles: path.resolve(__dirname, "styles"),
-      routes: path.resolve(__dirname, "routes"),
+      components: path.resolve(__dirname, "app/components"),
+      utils: path.resolve(__dirname, "app/utils"),
+      styles: path.resolve(__dirname, "app/styles"),
+      routes: path.resolve(__dirname, "app/routes"),
+      i18n: path.resolve(__dirname, "i18n"),
     };
     return config;
   },

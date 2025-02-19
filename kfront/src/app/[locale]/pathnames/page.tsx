@@ -1,4 +1,4 @@
-import LanguageSelector from "@components/LanguageSelector";
+import LanguageSelector from "app/components/LanguageSelector";
 import { Box } from "@mui/material";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
