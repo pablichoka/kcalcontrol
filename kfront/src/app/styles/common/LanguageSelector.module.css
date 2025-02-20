@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.select {
+  color: white;
+}
+
+.icon {
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.menuItem {
+  color: black; 
+  background-color: blue;
+}
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+}

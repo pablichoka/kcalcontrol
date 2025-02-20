@@ -11,6 +11,7 @@ import {
 import { Locale, usePathname, useRouter } from "i18n/routing";
 import { useLocale, useTranslations } from "next-intl";
 import React, { useEffect, useState, useTransition } from "react";
+import styles from "@styles/common/LanguageSelector.module.css";
 
 const LanguageSelector: React.FC = () => {
   const t = useTranslations("frontpage");
@@ -36,23 +37,32 @@ const LanguageSelector: React.FC = () => {
   return (
     <Box>
       <Select
-        renderValue={() =>
-          isPending ? (
-            <CircularProgress size={20} color="inherit" />
-          ) : (
-            <Box display="flex" alignItems="center">
-              <Language />
-              <Box ml={1}>{t(`language.${language}`)}</Box>
+        renderValue={() => (
+            <Box className={styles.container}>
+            <Box className={styles.iconContainer}>
+              {isPending ? (
+              <CircularProgress
+                size={24}
+                color="inherit"
+                className={styles.icon}
+              />
+              ) : (
+              <Language className={styles.icon} />
+              )}
             </Box>
-          )
-        }
-        style={{ color: "white" }}
+            <Box ml={1}>{t(`language.${language}`)}</Box>
+            </Box>
+        )}
+        sx={{ color: "white" }}
         onChange={(event) => onSelectChange(event)}
         value={language}
-        IconComponent={ArrowDropDown}
       >
-        <MenuItem value="en">English</MenuItem>
-        <MenuItem value="es">Español</MenuItem>
+        <MenuItem className={styles.menuItem} value="en">
+          English
+        </MenuItem>
+        <MenuItem className={styles.menuItem} value="es">
+          Español
+        </MenuItem>
       </Select>
     </Box>
   );
