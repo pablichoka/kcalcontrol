@@ -7,9 +7,11 @@ import { Box, Button, ButtonGroup, Divider, Typography } from "@mui/material";
 import HomeIcon from "@mui/icons-material/Home";
 import RefreshIcon from "@mui/icons-material/Refresh";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import { useTranslations } from "next-intl";
 
 export default function NotFound() {
   const pathname = usePathname();
+  const t = useTranslations("notFound");
 
   return (
     <Box className={styles.container}>
@@ -17,10 +19,10 @@ export default function NotFound() {
       <Divider className={styles.divider} />
       <Box>
         <Typography className={styles.message}>
-          Oops! The page you are looking for does not exist: {pathname}
+          {t('oops')} {pathname}
         </Typography>
         <Typography className={styles.subMessage}>
-          It might have been moved or deleted.
+          {t('explanation')}
         </Typography>
       </Box>
       <Divider className={styles.divider} />
@@ -28,7 +30,7 @@ export default function NotFound() {
         <ButtonGroup size="large" color="primary">
           <Link href="/">
             <Button className={styles.button} startIcon={<HomeIcon />}>
-              Home
+              {t('home')}
             </Button>
           </Link>
           <Button
@@ -36,14 +38,14 @@ export default function NotFound() {
             onClick={() => window.location.reload()}
             className={styles.button}
           >
-            Reload
+            {t('refresh')}
           </Button>
           <Button
             startIcon={<ArrowBackIcon />}
             onClick={() => window.history.back()}
             className={styles.button}
           >
-            Go Back
+            {t('back')}
           </Button>
         </ButtonGroup>
       </Box>

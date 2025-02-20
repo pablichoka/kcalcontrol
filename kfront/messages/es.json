@@ -1,4 +1,11 @@
 {
+  "notFound": {
+    "oops": "Uy! La pagina que estás buscando no existe:",
+    "explanation": "Es posible que haya sido movida o eliminada.",
+    "home": "Inicio",
+    "back": "Atrás",
+    "refresh": "Recargar"
+  },
   "frontpage": {
     "message": "¡Hola Mundo!",
     "description": "El titulo principal de la página",

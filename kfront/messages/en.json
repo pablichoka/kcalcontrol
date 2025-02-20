@@ -1,4 +1,11 @@
 {
+  "notFound": {
+    "oops": "Oops! The page you are looking for does not exist:",
+    "explanation": "It might have been moved or deleted.",
+    "home": "Home",
+    "back": "Go back",
+    "refresh": "Refresh"
+  },
   "frontpage": {
     "message": "Hello World!",
     "description": "The main title of the application",
