@@ -1,25 +1,29 @@
 .container {
   display: flex;
   align-items: center;
-  color: white;
 }
 
 .select {
-  color: white;
+  background-color: black;
 }
 
 .icon {
-  margin-right: 8px;
   display: flex;
   align-items: center;
+  width: 25px;
+  height: 25px;
 }
 
 .menuItem {
-  color: black; 
   background-color: blue;
 }
 
 .iconContainer {
   display: flex;
   align-items: center;
+}
+
+.flag {
+  width: 34px;
+  height: 25px;
 }

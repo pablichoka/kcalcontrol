@@ -1,17 +1,21 @@
 "use client";
 
-import { ArrowDropDown, Language } from "@mui/icons-material";
+import { Language } from "@mui/icons-material";
 import {
   Box,
   CircularProgress,
   MenuItem,
   Select,
   SelectChangeEvent,
+  SvgIcon,
 } from "@mui/material";
 import { Locale, usePathname, useRouter } from "i18n/routing";
 import { useLocale, useTranslations } from "next-intl";
 import React, { useEffect, useState, useTransition } from "react";
 import styles from "@styles/common/LanguageSelector.module.css";
+import EsFlag from "../../../../public/flags/es.svg";
+import EnFlag from "../../../../public/flags/gb.svg";
+import Image from "next/image";
 
 const LanguageSelector: React.FC = () => {
   const t = useTranslations("frontpage");
@@ -38,30 +42,31 @@ const LanguageSelector: React.FC = () => {
     <Box>
       <Select
         renderValue={() => (
-            <Box className={styles.container}>
-            <Box className={styles.iconContainer}>
+          <Box className={styles.container}>
               {isPending ? (
-              <CircularProgress
-                size={24}
-                color="inherit"
-                className={styles.icon}
-              />
+                <CircularProgress
+                  size={26}
+                  color="inherit"
+                  className={styles.icon}
+                />
               ) : (
-              <Language className={styles.icon} />
+                <Image
+                  src={language === "en" ? EnFlag : EsFlag}
+                  alt="flag"
+                  className={styles.icon}
+                />
               )}
-            </Box>
-            <Box ml={1}>{t(`language.${language}`)}</Box>
-            </Box>
+          </Box>
         )}
         sx={{ color: "white" }}
         onChange={(event) => onSelectChange(event)}
         value={language}
       >
         <MenuItem className={styles.menuItem} value="en">
-          English
+          <Image src={EnFlag} alt="english" className={styles.flag} />
         </MenuItem>
         <MenuItem className={styles.menuItem} value="es">
-          Español
+          <Image src={EsFlag} alt="english" className={styles.flag} />
         </MenuItem>
       </Select>
     </Box>
