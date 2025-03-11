@@ -41,6 +41,7 @@ const LanguageSelector: React.FC = () => {
   return (
     <Box>
       <Select
+      className={styles.select}
         renderValue={() => (
           <Box className={styles.container}>
               {isPending ? (
