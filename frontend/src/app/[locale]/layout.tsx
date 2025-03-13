@@ -4,7 +4,6 @@ import "@styles/globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import {routing} from 'i18n/routing';
-import { styleText } from "util";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -29,7 +28,7 @@ export default async function RootLayout({ children, params }: Props) {
   return (
     <html lang={locale}>
       <body
-        className="poppins-400-regular antialeased"
+        className="poppins-400 antialeased"
       >
         <NextIntlClientProvider messages={messagesModule}>
           {children}
