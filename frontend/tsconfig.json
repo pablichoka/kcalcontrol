@@ -25,6 +25,7 @@
       "@utils/*": ["app/utils/*"],
       "@routes/*": ["app/routes/*"],
       "@i18n/*": ["i18n/*"],
+      "@public/*": ["../public/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

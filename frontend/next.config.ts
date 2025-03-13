@@ -12,9 +12,10 @@ const nextConfig: NextConfig = {
       resolveAlias: {
         components: path.resolve(__dirname, "app/components"),
         utils: path.resolve(__dirname, "app/utils"),
-        styles: path.resolve(__dirname, "app/styles"),
+        styles: path.resolve(__dirname, "/src/app/styles"),
         routes: path.resolve(__dirname, "app/routes"),
         i18n: path.resolve(__dirname, "i18n"),
+        public: path.resolve(__dirname, "../frontend/public"),
       }
     }},
   webpack: (config) => {
