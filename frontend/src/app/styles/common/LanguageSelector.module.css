@@ -1,21 +1,21 @@
-.container {
-  display: flex;
-  align-items: center;
-}
-
-.select {
-  background-color: black;
-}
-
 .icon {
+  width: 25px;
+  height: 18.75px;
+  border-radius: 5px;
   display: flex;
   align-items: center;
-  width: 25px;
-  height: 25px;
+  justify-content: center;
 }
 
 .menuItem {
-  background-color: blue;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menuItem img {
+  margin-right: 10px;
 }
 
 .iconContainer {
@@ -26,4 +26,19 @@
 .flag {
   width: 34px;
   height: 25px;
+  border-radius: 5px;
+}
+
+.selectContainer {
+  margin: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 40px;
+}
+
+.value {
+  padding-top: 2px;
+  color: var(--foreground);
 }

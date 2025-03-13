@@ -124,68 +124,67 @@
   font-display: swap;
 }
 
-/* Clases para acceder a cada estilo */
-.poppins-900-black {
+.poppins-900 {
   font-family: 'Poppins';
   font-weight: 900;
   font-style: normal;
 }
 
-.poppins-700-bold {
+.poppins-700 {
   font-family: 'Poppins';
   font-weight: 700;
   font-style: normal;
 }
 
-.poppins-600-semibold {
+.poppins-600 {
   font-family: 'Poppins';
   font-weight: 600;
   font-style: normal;
 }
 
-.poppins-500-medium {
+.poppins-500 {
   font-family: 'Poppins';
   font-weight: 500;
   font-style: normal;
 }
 
-.poppins-400-regular {
+.poppins-400 {
   font-family: 'Poppins';
   font-weight: 400;
   font-style: normal;
 }
 
-.poppins-300-light {
+.poppins-300 {
   font-family: 'Poppins';
   font-weight: 300;
   font-style: normal;
 }
 
-.poppins-100-thin {
+.poppins-100 {
   font-family: 'Poppins';
   font-weight: 100;
   font-style: normal;
 }
 
-.poppins-900-black-italic {
+.poppins-900-italic {
   font-family: 'Poppins';
   font-weight: 900;
   font-style: italic;
 }
 
-.poppins-700-bold-italic {
+.poppins-700-italic {
   font-family: 'Poppins';
   font-weight: 700;
   font-style: italic;
 }
 
-.poppins-600-semibold-italic {
+.poppins-600-italic {
   font-family: 'Poppins';
   font-weight: 600;
   font-style: italic;
 }
 
-.poppins-500-medium-italic {
+.poppins-500-italic {
   font-family: 'Poppins';
   font-weight: 500;
   font-style: italic;
@@ -197,13 +196,13 @@
   font-style: italic;
 }
 
-.poppins-300-light-italic {
+.poppins-300-italic {
   font-family: 'Poppins';
   font-weight: 300;
   font-style: italic;
 }
 
-.poppins-100-thin-italic {
+.poppins-100-italic {
   font-family: 'Poppins';
   font-weight: 100;
   font-style: italic;
